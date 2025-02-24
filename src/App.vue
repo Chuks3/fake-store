@@ -53,4 +53,12 @@ export default {
 body {
 	background: #282c34;
 }
+
+
+@media screen and (max-width: 650px) {
+  #app {
+    justify-content: center;
+    gap: 30px;
+  }
+}
 </style>
