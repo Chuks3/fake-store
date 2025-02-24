@@ -46,19 +46,12 @@ export default {
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 15px;
   align-items: stretch;
 }
 
 body {
 	background: #282c34;
-}
-
-
-@media screen and (max-width: 650px) {
-  #app {
-    justify-content: center;
-    gap: 30px;
-  }
 }
 </style>
