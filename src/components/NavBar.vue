@@ -1,12 +1,8 @@
 <template>
   <div class="navbar">
-		<h1>SHOPPING APP</h1>
-	</div>
+		<router-link to="/">SHOPPING APP</router-link>
+</div>
 </template>
-
-<script>
-
-</script>
 
 <style scoped>
 .navbar {
@@ -23,9 +19,11 @@
 	z-index: 9;
 }
 
-.navbar h1 {
+.navbar a {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 800;
+	font-size: xx-large;
 	color: #3bb99b;
+	text-decoration: none;
 }
 </style>

@@ -1,19 +1,20 @@
 <template>
   <div class="product-card">
-      <a href="#" class="inner-container">
-        <img :src="item.image" class="card-image">
-        <p class="card-text">{{ item.title }}</p>
-        <p class="card-price">${{ item.price }}</p>
-      </a>
-    </div>
+    <router-link to="/product-details/" class="inner-container">
+      <img :src="item.image" class="card-image">
+      <p class="card-text">{{ item.title }}</p>
+      <p class="card-price">${{ item.price }}</p>
+    </router-link>
+  </div>
 </template>
 
 <script>
+import router from '@/router';
+
 export default {
   name: 'Card',
   props: {
     item: {},
-    default: {}
   }
 }
 </script>

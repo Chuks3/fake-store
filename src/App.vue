@@ -1,17 +1,16 @@
 <template>
-  <NavBar/>
-  <Card v-for="item in shoppingData" :key="item.id" :item="item" /> 
-  <router-view/>
+  <main>
+    <NavBar/>
+    <router-view :shoppingData="shoppingData"/>
+  </main>
 </template>
 
 <script>
-import Card from './components/Card.vue';
 import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
-    Card,
     NavBar, 
   },
 
@@ -44,13 +43,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 15px;
-  align-items: stretch;
 }
-
 body {
 	background: #282c34;
 }
