@@ -1,6 +1,6 @@
 <template>
   <div class="product-card">
-    <router-link to="/product-details/" class="inner-container">
+    <router-link :to="{ name: 'ProductDetails', params: {id: item.id}}" class="inner-container">
       <img :src="item.image" class="card-image">
       <p class="card-text">{{ item.title }}</p>
       <p class="card-price">${{ item.price }}</p>
@@ -15,6 +15,10 @@ export default {
   name: 'Card',
   props: {
     item: {},
+  },
+  data() {
+    return {
+    }
   }
 }
 </script>
