@@ -17,3 +17,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Site hosting
+See [Hosting URL](https://fake-store-gold-psi.vercel.app/).
